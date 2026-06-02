@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PinjamIn - Ekosistem Pinjam Meminjam Mahasiswa</title>
+  
+  <!-- Custom Hand-coded Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- 🌟 Topmost Micro Bar -->
+  <div class="micro-bar">
+    <div class="container">
+      <div class="micro-bar-left">
+        <div class="micro-bar-item">
+          <i data-lucide="phone" style="width: 12px; height: 12px;"></i>
+          <span>+62 821-3456-7890</span>
+        </div>
+        <div class="micro-bar-item">
+          <i data-lucide="mail" style="width: 12px; height: 12px;"></i>
+          <span style="text-decoration: underline;">info@pinjamin.id</span>
+        </div>
+      </div>
+      <div class="micro-bar-right">
+        <div class="micro-bar-item text-yellow">
+          <i data-lucide="award" style="width: 12px; height: 12px;"></i>
+          <span>Ekosistem P2P Universitas Jenderal Soedirman Excl.</span>
+        </div>
+        <span style="color: #52525b;">|</span>
+        <span>Kampus Purwokerto • Blater</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🚀 Main Header Navigation -->
+  <header class="main-header">
+    <div class="container">
+      <!-- Logo Brand -->
+      <div class="logo" onclick="window.location.reload();">
+        <div class="logo-icon">
+          <i data-lucide="graduation-cap" style="width: 22px; height: 22px;"></i>
+        </div>
+        <div>
+          <span class="logo-text-main">Pinjam<span>In</span></span>
+          <span class="logo-text-sub">KAMPUS SHARING</span>
+        </div>
+      </div>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav">
+        <a href="#hero" class="nav-link active">Beranda</a>
+        <a href="#katalog" class="nav-link">Jelajahi</a>
+        <a href="#carakerja" class="nav-link">Cara Kerja</a>
+        <a href="#" class="nav-link" onclick="alert('Demo Mode: Fitur ini memerlukan integrasi React dan Database.');">Peminjaman</a>
+        <a href="#" class="nav-link" onclick="alert('Demo Mode: Halaman Blog akan segera hadir!');">Blog</a>
+        <a href="#" class="nav-link" onclick="alert('Hubungi kami di info@pinjamin.id atau telepon +62 821-3456-7890');">Kontak</a>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="header-actions">
+        <button class="btn-secondary" onclick="alert('Demo Mode: Gunakan akun simulasi di web utama untuk masuk!');">
+          Masuk
+        </button>
+        <button class="btn-primary" onclick="alert('Demo Mode: Silakan registrasi KTM Anda melalui web utama!');">
+          <i data-lucide="sparkles" style="width: 16px; height: 16px;"></i>
+          <span>Daftar Gratis</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 🚀 Segment 1: Encapsulated Dual-Tone Hero Container -->
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="hero-box">
+        <!-- Ambient Glow Effects -->
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+
+        <div class="hero-grid">
+          <!-- Left Column Intro -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <i data-lucide="sparkles" style="width: 14px; height: 14px; color: #e9a32c; margin-right: 4px;"></i>
+              <span>Platform Mahasiswa #1 di Indonesia</span>
+            </div>
+
+            <h1 class="hero-title">
+              Butuh Alat?<br>
+              <span>Pinjam Aja Dulu!</span>
+            </h1>
+
+            <p class="hero-desc">
+              Solusi hemat untuk kebutuhan kuliahmu. Pinjam perlengkapan praktikum, hobi, hingga elektronik dari sesama mahasiswa di kampusmu dengan mudah, aman, dan harga bersahabat. Saling bantu memajukan sirkularitas akademis!
+            </p>
+
+            <div>
+              <a href="#katalog" class="hero-cta">
+                <span>Mulai Pinjam Sekarang</span>
+                <i data-lucide="arrow-right" style="width: 16px; height: 16px; stroke-width: 3px;"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column Student Team Tablet Frame Mockup -->
+          <div class="hero-media">
+            <div class="tablet-mockup">
+              <!-- Micro indicators -->
+              <div class="mockup-header">
+                <div class="mockup-dots">
+                  <span class="mockup-dot red"></span>
+                  <span class="mockup-dot yellow"></span>
+                  <span class="mockup-dot green"></span>
+                </div>
+                <span>PINJAMIN SYSTEM HOSTED BY NIM</span>
+              </div>
+
+              <div class="mockup-screen">
+                <img 
+                  src="images/hero_students.jpg" 
+                  alt="Friendly Students Team Campus"
+                  class="mockup-image"
+                >
+                <!-- Overlay tags -->
+                <div class="mockup-badge-top">PRO VERIFIED ✓</div>
+                <div class="mockup-badge-bottom">Saling Dukung 🎓</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 🤝 Golden Bottom Strip in the Hero layout -->
+        <div class="hero-bottom-strip">
+          <div class="strip-label">Platform Terbaik Untuk Mahasiswa</div>
+          
+          <div class="strip-items">
+            <div class="strip-item"><span>✓</span> Terverifikasi KTM & NIM</div>
+            <div class="strip-item"><span>✓</span> Pembayaran Kampus Aman</div>
+            <div class="strip-item"><span>✓</span> Ulasan Mahasiswa Nyata</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 🧭 Segment 2: JELAJAHI BARANG catalog section -->
+  <section id="katalog" class="catalog-section">
+    <div class="container">
+      
+      <!-- Custom Header labels matching screenshot -->
+      <div class="section-header">
+        <span class="section-badge">Jelajahi Barang</span>
+        <h2 class="section-title">Temukan apa yang Kamu Butuhkan</h2>
+      </div>
+
+      <!-- Master Row grid mapping left catalog & right logs -->
+      <div class="master-grid">
+        
+        <!-- Left Column: Product Filters and elegant White Cards -->
+        <div class="catalog-col">
+          
+          <!-- Horizontal Filter Buttons -->
+          <div class="filters-row">
+            <button class="filter-btn active" onclick="alert('Demo Mode: Semua kategori ditampilkan.');">Semua Kategori</button>
+            <button class="filter-btn" onclick="alert('Demo Mode: Semua kategori ditampilkan.');">Elektronik</button>
+            <button class="filter-btn" onclick="alert('Demo Mode: Semua kategori ditampilkan.');">Fotografi</button>
+            <button class="filter-btn" onclick="alert('Demo Mode: Semua kategori ditampilkan.');">Outdoor</button>
+            <button class="filter-btn" onclick="alert('Demo Mode: Semua kategori ditampilkan.');">Peralatan Lab</button>
+          </div>
+
+          <!-- Core Product Grid of elegant white cards -->
+          <div class="product-grid">
+            
+            <!-- Item 1: iPad Air -->
+            <div class="product-card">
+              <div class="card-img-container">
+                <img src="images/ipad.jpg" alt="iPad Air Gen 5 M1" class="card-img">
+                <div class="card-badge">Elektronik</div>
+                <button class="wishlist-btn active" onclick="this.classList.toggle('active');">
+                  <i data-lucide="heart" style="width: 16px; height: 16px;"></i>
+                </button>
+              </div>
+              <div class="card-body">
+                <div>
+                  <div class="card-header-row">
+                    <h3 class="card-title">iPad Air Gen 5 M1</h3>
+                    <span class="status-badge available">Tersedia ✓</span>
+                  </div>
+                  <div class="card-location">
+                    <i data-lucide="navigation" style="width: 14px; height: 14px;"></i>
+                    <span>FEB Grendeng, UNSOED (0.5 km)</span>
+                  </div>
+                </div>
+                <div class="card-bottom-row">
+                  <div class="price-section">
+                    <div>
+                      <p class="price-label">Tarif Sewa</p>
+                      <p class="price-val">Rp 45.000<span> / hari</span></p>
+                    </div>
+                    <span class="condition-tag">Kondisi: <strong>Sangat Baik</strong></span>
+                  </div>
+                  <button class="btn-card-action" onclick="alert('Mengalihkan ke detail peminjaman iPad Air Gen 5 M1...');">
+                    Pinjam Sekarang
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2: Sony WH-1000XM4 -->
+            <div class="product-card">
+              <div class="card-img-container">
+                <img src="images/headphones.jpg" alt="Sony WH-1000XM4" class="card-img">
+                <div class="card-badge">Elektronik</div>
+                <button class="wishlist-btn" onclick="this.classList.toggle('active');">
+                  <i data-lucide="heart" style="width: 16px; height: 16px;"></i>
+                </button>
+              </div>
+              <div class="card-body">
+                <div>
+                  <div class="card-header-row">
+                    <h3 class="card-title">Sony WH-1000XM4</h3>
+                    <span class="status-badge rented">Habis Terpinjam</span>
+                  </div>
+                  <div class="card-location">
+                    <i data-lucide="navigation" style="width: 14px; height: 14px;"></i>
+                    <span>Perpustakaan Pusat UNSOED (0.2 km)</span>
+                  </div>
+                </div>
+                <div class="card-bottom-row">
+                  <div class="price-section">
+                    <div>
+                      <p class="price-label">Tarif Sewa</p>
+                      <p class="price-val">Rp 35.000<span> / hari</span></p>
+                    </div>
+                    <span class="condition-tag">Kondisi: <strong>Baru</strong></span>
+                  </div>
+                  <button class="btn-card-action" onclick="alert('Item sedang dipinjam mahasiswa lain. Silakan pilih opsi lain!');" style="opacity: 0.6; cursor: not-allowed;">
+                    Sedang Dipinjam
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3: Tripod Kamera Pro -->
+            <div class="product-card">
+              <div class="card-img-container">
+                <img src="images/tripod.jpg" alt="Tripod Kamera Pro" class="card-img">
+                <div class="card-badge">Hobi & Sport</div>
+                <button class="wishlist-btn active" onclick="this.classList.toggle('active');">
+                  <i data-lucide="heart" style="width: 16px; height: 16px;"></i>
+                </button>
+              </div>
+              <div class="card-body">
+                <div>
+                  <div class="card-header-row">
+                    <h3 class="card-title">Tripod Kamera Pro</h3>
+                    <span class="status-badge available">Tersedia ✓</span>
+                  </div>
+                  <div class="card-location">
+                    <i data-lucide="navigation" style="width: 14px; height: 14px;"></i>
+                    <span>FISIP Grendeng, UNSOED (0.9 km)</span>
+                  </div>
+                </div>
+                <div class="card-bottom-row">
+                  <div class="price-section">
+                    <div>
+                      <p class="price-label">Tarif Sewa</p>
+                      <p class="price-val">Rp 15.000<span> / hari</span></p>
+                    </div>
+                    <span class="condition-tag">Kondisi: <strong>Bekas</strong></span>
+                  </div>
+                  <button class="btn-card-action" onclick="alert('Mengalihkan ke detail peminjaman Tripod Kamera Pro...');">
+                    Pinjam Sekarang
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4: Kamera DSLR Canon EOS 200D -->
+            <div class="product-card">
+              <div class="card-img-container">
+                <img src="images/camera.jpg" alt="Canon EOS 200D" class="card-img">
+                <div class="card-badge">Fotografi</div>
+                <button class="wishlist-btn" onclick="this.classList.toggle('active');">
+                  <i data-lucide="heart" style="width: 16px; height: 16px;"></i>
+                </button>
+              </div>
+              <div class="card-body">
+                <div>
+                  <div class="card-header-row">
+                    <h3 class="card-title">Kamera DSLR Canon EOS 200D</h3>
+                    <span class="status-badge available">Tersedia ✓</span>
+                  </div>
+                  <div class="card-location">
+                    <i data-lucide="navigation" style="width: 14px; height: 14px;"></i>
+                    <span>FT Purbalingga (Blater) (12.5 km)</span>
+                  </div>
+                </div>
+                <div class="card-bottom-row">
+                  <div class="price-section">
+                    <div>
+                      <p class="price-label">Tarif Sewa</p>
+                      <p class="price-val">Rp 85.000<span> / hari</span></p>
+                    </div>
+                    <span class="condition-tag">Kondisi: <strong>Sangat Baik</strong></span>
+                  </div>
+                  <button class="btn-card-action" onclick="alert('Mengalihkan ke detail peminjaman Canon EOS 200D...');">
+                    Pinjam Sekarang
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Quick trigger footer -->
+          <div class="catalog-more-btn">
+            <a href="#hero" class="btn-link-more" onclick="alert('Membuka seluruh katalog di Web Utama...');">
+              <span>LIHAT SELURUH KATALOG BARANG</span>
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px; stroke-width: 2.5px;"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Column (Sidebar Box): Match the mockup Orange Activity Tray -->
+        <div class="sidebar-col">
+          <div class="sidebar-box">
+            
+            <!-- Header Title Board -->
+            <div class="sidebar-header">
+              <span class="sidebar-header-title">
+                <i data-lucide="activity" style="width: 16px; height: 16px; animation: pulse 1.5s infinite;"></i>
+                <span>#AKTIVITASTERBARU</span>
+              </span>
+              <span class="sidebar-header-badge">Kampus Live</span>
+            </div>
+
+            <!-- Feed lists -->
+            <div class="sidebar-body">
+              
+              <div class="activity-card">
+                <div class="activity-avatar">A</div>
+                <div class="activity-text">
+                  <p class="activity-user">Andi</p>
+                  <p class="activity-action">memulai sewa <strong>Tenda 4p</strong></p>
+                  <span class="activity-time">1 jam yang lalu</span>
+                </div>
+              </div>
+
+              <div class="activity-card">
+                <div class="activity-avatar" style="background-color: #da921a;">R</div>
+                <div class="activity-text">
+                  <p class="activity-user">Rina Soedirman</p>
+                  <p class="activity-action">meminjamkan <strong>Sony WH-1000XM4</strong></p>
+                  <span class="activity-time">3 jam yang lalu</span>
+                </div>
+              </div>
+
+              <div class="activity-card">
+                <div class="activity-avatar">B</div>
+                <div class="activity-text">
+                  <p class="activity-user">Budi Purwokerto</p>
+                  <p class="activity-action">mengembalikan <strong>Tripod Kamera Pro</strong></p>
+                  <span class="activity-time">5 jam yang lalu</span>
+                </div>
+              </div>
+
+              <div class="activity-card">
+                <div class="activity-avatar" style="background-color: #da921a;">A</div>
+                <div class="activity-text">
+                  <p class="activity-user">Aris Adi Saputra</p>
+                  <p class="activity-action">meminjam <strong>iPad Air Gen 5 M1</strong></p>
+                  <span class="activity-time">1 hari yang lalu</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Bottom Orange Block Button -->
+            <div class="sidebar-footer">
+              <button class="sidebar-btn" onclick="alert('Membuka katalog barang terpopuler...');">
+                <span>Lihat Semua Aktivitas</span>
+                <i data-lucide="arrow-up-right" style="width: 16px; height: 16px; stroke-width: 3px;"></i>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 🛠️ Segment 3: CARA KERJA section -->
+  <section id="carakerja" class="works-section">
+    <div class="container">
+      
+      <div class="works-header">
+        <span class="section-badge" style="text-align: center;">Cara Kerja</span>
+        <h2 class="section-title" style="text-align: center; color: var(--clr-dark);">Semudah 3 Langkah Praktis</h2>
+        <p style="font-size: 14px; color: var(--clr-text-light); text-align: center; font-weight: 500;">
+          Peminjaman barang terjamin keamanannya antar sesama sivitas mahasiswa aktif di lingkungan kampus.
+        </p>
+      </div>
+
+      <div class="works-grid">
+        <!-- Visual dashed connectors linking cards only on large layouts -->
+        <div class="works-connector"></div>
+
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <h3 class="step-title">Cari Barang Kami</h3>
+          <p class="step-desc">
+            Gunakan filter pencarian pintar kami untuk menelusuri alat kuliah yang kamu inginkan, dekat dari kosmu.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <h3 class="step-title">Pinjam & Bayar Aman</h3>
+          <p class="step-desc">
+            Selesaikan durasi jadwal penyewaan dan transfer pembayaran secara aman. Saldo ditahan hingga serah terima selesai.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <h3 class="step-title">Pakai & Kembalikan</h3>
+          <p class="step-desc">
+            Hubungi lender, janjian COD aman di area kampus, manfaatkan untuk mendukung kelulusan tugasmu, lalu serahkan kembali.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 📣 Segment 4: Core Dual Split CTA Banner (Orange Left • Charcoal Right) -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-grid">
+        
+        <!-- Left Block CTA: Orange bg -->
+        <div class="cta-card cta-card-left">
+          <div class="cta-bg-icon">
+            <i data-lucide="graduation-cap" style="width: 100%; height: 100%; stroke-width: 1px;"></i>
+          </div>
+          
+          <div>
+            <span class="cta-badge">UNTUK PEMINJAM</span>
+            <h4 class="cta-title">Daftar & Mulai Pinjam</h4>
+            <p class="cta-desc">
+              Nikmati kemudahan sewa berbagai alat harian tanpa harus boros membeli yang baru. Hemat hingga 90% budget bulanan mahasiswa!
+            </p>
+          </div>
+
+          <button class="cta-btn" onclick="alert('Membuka pendaftaran Peminjam di Web Utama...');">
+            Daftar Sebagai Peminjam
+          </button>
+        </div>
+
+        <!-- Right Block CTA: Charcoal grey/black bg -->
+        <div class="cta-card cta-card-right">
+          <div class="cta-bg-icon">
+            <i data-lucide="camera" style="width: 100%; height: 100%; stroke-width: 1px;"></i>
+          </div>
+
+          <div>
+            <span class="cta-badge">UNTUK PEMILIK BARANG</span>
+            <h4 class="cta-title">Pinjamkan Barangmu</h4>
+            <p class="cta-desc">
+              Punya kamera, proyektor, atau tenda gunung di kolong kosan? Daftarkan sekarang dan raup uang jajan ekstra berlimpah tiap minggunya!
+            </p>
+          </div>
+
+          <button class="cta-btn" onclick="alert('Membuka panel kemitraan Lender di Web Utama...');">
+            Mulai Pinjamkan Sekarang
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 💬 Segment 5: Testimoni & Reviews -->
+  <section class="testimonials-section">
+    <div class="container">
+      <span class="section-badge">Testimoni</span>
+      <h2 class="section-title">Apa Kata Mahasiswa?</h2>
+
+      <div class="testimonials-grid">
+        
+        <!-- Review 1 -->
+        <div class="testimonial-card">
+          <div class="stars">
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #e9a32c;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #e9a32c;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #e9a32c;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #e9a32c;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #e9a32c;"></i>
+          </div>
+          <p class="testimonial-comment">
+            "Asli terbantu banget! Buat praktikum Hubungan Masyarakat harus buat dokumenter video, tapi dana kelompok tipis banget kalau sewa di rental umum. Saling pinjam di PinjamIn dapet kamera Canon berkualitas cuma sepertiga harga sewa luar universitas!"
+          </p>
+          <div class="testimonial-user">
+            <div class="testimonial-avatar dark">FA</div>
+            <div>
+              <h4 class="user-name">Farhan Azis</h4>
+              <p class="user-campus">FEB, Universitas Jenderal Soedirman</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="testimonial-card">
+          <div class="stars">
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #e9a32c;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #e9a32c;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #e9a32c;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #e9a32c;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #e9a32c;"></i>
+          </div>
+          <p class="testimonial-comment">
+            "Barang-barang saya seperti Speaker Portable, Ring Light, dan Carrier tas yang tadinya berdebu di kolong kasur, sekarang menghasilkan uang saku tambahan bulanan yang lumayan banget buat bayar wifi. Sistem verifikasi KTM di sini bikin tenang dan aman!"
+          </p>
+          <div class="testimonial-user">
+            <div class="testimonial-avatar gold">SL</div>
+            <div>
+              <h4 class="user-name">Sari Lestari</h4>
+              <p class="user-campus">FISIP, Universitas Jenderal Soedirman</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 💬 Footer Section -->
+  <footer class="main-footer">
+    <div class="container">
+      
+      <!-- Main Grid section -->
+      <div class="footer-grid">
+        
+        <!-- Col 1: About Brand -->
+        <div class="footer-col-about">
+          <div class="logo" onclick="window.location.reload();">
+            <div class="logo-icon" style="width: 36px; height: 36px; border-radius: 10px;">
+              <i data-lucide="graduation-cap" style="width: 18px; height: 18px;"></i>
+            </div>
+            <span class="logo-text-main" style="font-size: 18px;">Pinjam<span>In</span></span>
+          </div>
+          
+          <p class="footer-about-text">
+            Platform gotong-royong digital mahasiswa Indonesia. Saling bantu meminjam dan meminjamkan peralatan berkualitas tinggi antar teman sekampus demi menekan biaya pendidikan serta mendukung ekonomi sirkular.
+          </p>
+
+          <div class="footer-badge">
+            <i data-lucide="shield-check" style="width: 16px; height: 16px; color: var(--clr-primary);"></i>
+            <span>Sistem Terverifikasi Kampus Resmi</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Perusahaan -->
+        <div class="footer-col-links">
+          <h4 class="footer-title">Perusahaan</h4>
+          <ul class="footer-links-list">
+            <li><a href="#" class="footer-link" onclick="alert('Portal Informasi Perusahaan');">Tentang Kami</a></li>
+            <li><a href="#" class="footer-link" onclick="alert('Portal Informasi Perusahaan');">Karir Kampus</a></li>
+            <li><a href="#" class="footer-link" onclick="alert('Portal Informasi Perusahaan');">Kontak Hub</a></li>
+            <li><a href="#" class="footer-link" onclick="alert('Portal Informasi Perusahaan');">Mitra Akademis</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Dukungan -->
+        <div class="footer-col-links">
+          <h4 class="footer-title">Dukungan</h4>
+          <ul class="footer-links-list">
+            <li><a href="#" class="footer-link" onclick="alert('Portal Layanan Bantuan');">Pusat Bantuan</a></li>
+            <li><a href="#" class="footer-link" onclick="alert('Portal Layanan Bantuan');">Syarat & Ketentuan</a></li>
+            <li><a href="#" class="footer-link" onclick="alert('Portal Layanan Bantuan');">Kebijakan Privasi</a></li>
+            <li><a href="#" class="footer-link" onclick="alert('Portal Layanan Bantuan');">Keamanan COD</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div class="footer-col-newsletter">
+          <h4 class="footer-title">Langganan Newsletter</h4>
+          <p class="footer-newsletter-text">
+            Dapatkan info penawaran sewa alat terpopuler dan update promo gratis ongkir kampus harian.
+          </p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Terima kasih! Email Anda berhasil didaftarkan ke sistem newsletter.'); this.reset();">
+            <input 
+              type="email" 
+              placeholder="name@emailkampus.ac.id" 
+              required
+              class="newsletter-input"
+            >
+            <button type="submit" class="newsletter-btn">
+              <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 PinjamIn Indonesia. All rights reserved. | Madura & Bandung Perjuangan 🇮🇩</p>
+        <div class="footer-tags">
+          <span class="footer-tag">• Berbagi Hemat</span>
+          <span class="footer-tag">• Saling Percaya</span>
+          <span class="footer-tag">• Berdikari Kampus</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 💬 Floating Assistant Bubble -->
+  <button class="fab-chat" onclick="alert('Halo! Asisten AI PinjamIn siap membantu Anda di Web Utama.');">
+    <i data-lucide="message-square" style="width: 24px; height: 24px;"></i>
+  </button>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

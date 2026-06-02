@@ -1,0 +1,10 @@
+{
+  "name": "PinjamIn UNSOED",
+  "description": "Portal Sharing Alat Kuliah & Praktikum Mahasiswa Universitas Jenderal Soedirman (UNSOED) Purwokerto. Saling Bantu, Hemat Biaya, dan Aman Terverifikasi KTM.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
