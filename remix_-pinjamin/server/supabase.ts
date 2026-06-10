@@ -23,3 +23,6 @@ export const supabaseAdmin = supabaseServiceRoleKey
       }
     })
   : null;
+
+// Gunakan supabaseAdmin jika tersedia untuk bypass RLS pada backend server
+export const supabaseClient = supabaseAdmin || supabase;

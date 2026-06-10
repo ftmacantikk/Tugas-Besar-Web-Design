@@ -1,4 +1,4 @@
-import { supabase } from './supabase';
+import { supabaseClient as supabase } from './supabase';
 import { db } from './db';
 
 const SEED_USERS = [

@@ -2,7 +2,7 @@ import express, { Request, Response, Router } from "express";
 import { db } from "./db";
 import { GoogleGenAI } from "@google/genai";
 import { Item, User } from "../src/types";
-import { supabase } from "./supabase";
+import { supabaseClient as supabase } from "./supabase";
 
 export const apiRouter = Router();
 
