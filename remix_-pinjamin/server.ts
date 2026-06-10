@@ -2,10 +2,14 @@ import express from "express";
 import path from "path";
 import { createServer as createViteServer } from "vite";
 import { apiRouter } from "./server/index";
+import { seedDatabase } from "./server/seeder";
 
 async function startServer() {
+  // Run Supabase DB Check & Seed on startup
+  await seedDatabase();
+
   const app = express();
-  const PORT = process.env.PORT || 3001;
+  const PORT = Number(process.env.PORT) || 3001;
 
   // Add standard body parsers
   app.use(express.json({ limit: "10mb" }));
